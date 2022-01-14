@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_version">
+    <sys_ws_version action="DELETE">
+        <active>true</active>
+        <deprecated>false</deprecated>
+        <is_default>false</is_default>
+        <short_description/>
+        <sys_class_name>sys_ws_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-14 13:14:49</sys_created_on>
+        <sys_id>cd963965db090110c2ee1c970596197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>v2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ws_version_cd963965db090110c2ee1c970596197c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-14 13:14:49</sys_updated_on>
+        <version>2</version>
+        <version_id>v2</version_id>
+        <web_service_definition display_value="NeedIt API">630f8d1ddb450110c2ee1c970596191d</web_service_definition>
+    </sys_ws_version>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>2599cd75db175f404f035d00cf96194d</instance_id>
+        <instance_name>dev64932</instance_name>
+        <name>sys_ws_version_cd963965db090110c2ee1c970596197c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_version"><sys_ws_version action="INSERT_OR_UPDATE"><active>true</active><deprecated>false</deprecated><is_default>false</is_default><short_description/><sys_class_name>sys_ws_version</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-14 13:14:49</sys_created_on><sys_id>cd963965db090110c2ee1c970596197c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>v2</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ws_version_cd963965db090110c2ee1c970596197c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-14 13:14:49</sys_updated_on><version>2</version><version_id>v2</version_id><web_service_definition display_value="NeedIt API">630f8d1ddb450110c2ee1c970596191d</web_service_definition></sys_ws_version></record_update>]]></payload>
+        <payload_hash>-1689438090</payload_hash>
+        <record_name>v2</record_name>
+        <reverted_from/>
+        <source>b81d95232f100110ffb5d8ddf699b6df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-14 13:14:49</sys_created_on>
+        <sys_id>0d963965db090110c2ee1c970596197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e58b9f5a20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-14 13:14:49</sys_updated_on>
+        <type>Scripted REST Version</type>
+        <update_guid>459639656e0901103392018cee41517e</update_guid>
+        <update_guid_history>459639656e0901103392018cee41517e:-1689438090</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-14 13:17:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_version">sys_ws_version</sys_db_object>
+        <sys_id>2c216ce73d30454095fbbc2b8d719000</sys_id>
+        <sys_metadata>cd963965db090110c2ee1c970596197c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>v2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ws_version_cd963965db090110c2ee1c970596197c</sys_update_name>
+        <sys_update_version display_value="sys_ws_version_cd963965db090110c2ee1c970596197c">0d963965db090110c2ee1c970596197e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-14 13:17:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
