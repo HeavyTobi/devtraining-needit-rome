@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Home">223f9e631b46f41068dd5464604bcb2a</macroponent>
+        <name>Generate query and title</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) 
+{
+    const sListQuery = api.state.listQuery;
+    const sListTitle = api.state.listTitle;
+
+    const aListQuery = sListQuery.split('^u_request_type=');
+    const aListTitle = sListTitle.split(' - ');
+
+    let sPassedQuery = event.payload.heListQuery;
+    let sPassedTitle = event.payload.heListTitle;
+
+    // check to see if a request type is passed in the payload.
+    if (sPassedQuery == 'legal' || sPassedQuery == 'hr' || sPassedQuery == 'facilities')
+    {
+        api.setState('listQuery', aListQuery[0] + '^u_request_type=' + sPassedQuery);
+        api.setState('listTitle', aListTitle[0] + ' - ' + sPassedQuery);
+        api.setState('reqType', sPassedQuery);
+    }
+    else if (sPassedQuery == 'all')
+    {
+        api.setState('listQuery', aListQuery[0]);
+        api.setState('listTitle', aListTitle[0]);
+        api.setState('reqType', sPassedQuery);
+    }
+    else
+    {
+        // else just pass the values to the event handler. This branch will execute when filter buttons are clicked
+        api.setState('listQuery', sPassedQuery);
+        api.setState('listTitle', sPassedTitle);
+
+        if (api.state.reqType != 'all')
+        {
+            sPassedQuery = sPassedQuery + '^u_request_type=' + api.state.reqType;
+            sPassedTitle = sPassedTitle + ' - ' + api.state.reqType;
+        }
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-01 13:16:59</sys_created_on>
+        <sys_id>14b3ae9fdb910110c2ee1c97059619f6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Generate query and title</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_client_script_14b3ae9fdb910110c2ee1c97059619f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-01 13:37:54</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>
